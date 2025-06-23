@@ -7,7 +7,7 @@ import { auth } from '@/auth'
 import { OrderInputSchema } from '../validator'
 import Order, { IOrder } from '../db/models/order.model'
 import { revalidatePath } from 'next/cache'
-
+import { sendPurchaseReceipt } from '@/emails'
 import { paypal } from '../paypal'
 import { DateRange } from 'react-day-picker'
 import Product from '../db/models/product.model'
